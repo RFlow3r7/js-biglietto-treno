@@ -17,5 +17,6 @@ if (eta < 18) {
     prezzoTotale *= 0.6;
 }
 
-// Mostra il prezzo totale //
-alert("Il prezzo totale del viaggio è: " + prezzoTotale.toFixed(2) + " €");
+var risultatoElement = document.createElement('p');
+risultatoElement.textContent = "Il prezzo totale del viaggio è: " + prezzoTotale.toFixed(2) + " €";
+document.body.appendChild(risultatoElement);
